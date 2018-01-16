@@ -11,7 +11,7 @@ def trans_location(location):
     if "," not in splits[-1]:
         return ' '.join(splits[:-1])
     else:
-        location
+        return location
 
 ## statistic of 
 def date_count_statistic():
