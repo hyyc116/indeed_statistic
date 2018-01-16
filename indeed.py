@@ -4,14 +4,14 @@ import sys
 import os
 from utils import *
 from collections import defaultdict
+import re
+
+
 
 ## mapping location to MSA
 def trans_location(location):
-    splits = location.split(" ")
-    if "," not in splits[-1]:
-        return ' '.join(splits[:-1])
-    else:
-        return location
+    location = re.sub(r'\d+','===',location)
+    return location.split("===")[0]
 
 ## statistic of 
 def date_count_statistic():
