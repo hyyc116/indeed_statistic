@@ -31,8 +31,8 @@ def date_count_statistic():
         print location,location_count[location]
 
 def salary():
-    for f in os.listdir('Pages'):
-        content = open('Pages/'+f).read().strip()
+    for f in os.listdir('../Pages'):
+        content = open('../Pages/'+f).read().strip()
 
         if 'salary' in content or '$' in content:
             print f,content
