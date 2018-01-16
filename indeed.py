@@ -6,11 +6,12 @@ from utils import *
 from collections import defaultdict
 
 ## mapping location to MSA
-def trans_location(l):
-    if "," not in location.split(" ")[-1]:
-        return ' '.join(location.split(" ")[:-1])
+def trans_location(location):
+    splits = location.split(" ")
+    if "," not in splits[-1]:
+        return ' '.join(splits[:-1])
     else:
-        l
+        location
 
 ## statistic of 
 def date_count_statistic():
