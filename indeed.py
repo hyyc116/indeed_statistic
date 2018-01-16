@@ -32,7 +32,7 @@ def date_count_statistic():
 
 def salary():
     for f in os.listdir('../Pages'):
-        content = open('../Pages/'+f).read().strip()
+        content = open('../Pages/'+f).read().strip().replace("u002F",'')
 
         if 'salary' in content or '$' in content:
             print f,content
