@@ -34,10 +34,11 @@ def parse():
     for f in os.listdir('../Pages'):
         content = open('../Pages/'+f).read().strip().replace("\\u002F",'/')
 
-        if 'salary' in content or '$' in content:
+        if '$' in content:
             salary =  extract_salary(content)
             if salary.strip()=='':
-                continue
+                si = content.index('$')
+                print f+"==="+content[si-10:si+10]
             print f+"=="+salary
 
 def extract_salary(content):
