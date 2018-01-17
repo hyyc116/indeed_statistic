@@ -39,7 +39,7 @@ def parse():
             print f+"=="+salary
 
 def extract_salary(content):
-    regex=re.compile("\$\d+,?\d*\.?\d*\s?\-?t?o?\s?\$?\d+,?\d*\.?\d*\s?\/\s?\w{2,5}")
+    regex=re.compile("\$\d+,?\d*\.?\d*\s?\-?t?o?\s?\$?\d+,?\d*\.?\d*\s?\/\s?\w{0,5}")
     ss = []
     for s in regex.findall(content):
         ss.append(s)
