@@ -5,7 +5,7 @@ import os
 from utils import *
 from collections import defaultdict
 import re
-from bs4 import BeautifulSoup as BS
+# from bs4 import BeautifulSoup as BS
 
 
 ## mapping location to MSA
