@@ -36,7 +36,7 @@ def parse():
 
         if 'salary' in content or '$' in content:
             salary =  extract_salary(content)
-            if salary.strip()!='':
+            if salary.strip()=='':
                 continue
             print f+"=="+salary
 
