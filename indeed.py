@@ -38,7 +38,7 @@ def parse():
             salary =  extract_salary(content)
             if salary.strip()=='':
                 si = content.index('$')
-                print f+"==="+content[si-10:si+10]
+                print f+"==="+content[si-10:si+50]
             print f+"=="+salary
 
 def extract_salary(content):
