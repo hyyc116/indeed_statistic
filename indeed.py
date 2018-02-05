@@ -39,7 +39,8 @@ def parse():
             if salary.strip()=='':
                 si = content.index('$')
                 print f+"==="+content[si-10:si+100]
-            print f+"=="+salary
+            else:
+                print f+"=="+salary
 
 def extract_salary(content):
     regex=re.compile("\$\d+,?\d*\.?\d*\s?\-?t?o?\s?\$?\d+,?\d*\.?\d*\s?\/\s?\w{0,5}")
